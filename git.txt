@@ -15,8 +15,7 @@ git config --list
 # git checkout devops --> switch to new brach
 # git checkout -b branch-name --> Create & switch to new branch
 # git branch --> List all the branches
-# git branch -d branch-name --> Delete a branch
-
+# git branch -d branch-name --> Delete a branch
 # git checkout main -->move to main branch
 # git merge devops --> now modified any file is marged with main branch
 
@@ -47,7 +46,7 @@ git config --list
 # git remote add origin github-repo-url
 # git remote
 # git remote -v
-# git push origin main -->
+# git push -u origin main -->
 # git pull origin main --> pull changes from remote to local repo
 
 
