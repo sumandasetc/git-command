@@ -1,0 +1,67 @@
+git config --global user.name "Suman Das"
+git config --global user.email "youremail@example.com"
+git config --list
+
+# mkdir git
+# cd git
+# git init --> Initializes a empty git repo (initialized empty Git repository in /home/suman/git/.git/)
+# git status --> branch, how many commit, how many untracked
+
+******A Git branch is a separate line of development in a Git repository
+
+# git status --> gives information about current git repository
+
+# git branch devops --> create a new branch
+# git checkout devops --> switch to new brach
+# git checkout -b branch-name --> Create & switch to new branch
+# git branch --> List all the branches
+# git branch -d branch-name --> Delete a branch
+
+# git checkout main -->move to main branch
+# git merge devops --> now modified any file is marged with main branch
+
+******Git sees the file exists, but Git is not tracking it yet.
+
+# git add file-name --> used to stage untracked file to stage area
+# git status
+# git rm --cached <file> --> Removes the file from staging and stops Git from tracking it.
+# git restore --staged filename ----> Removes the file from staging but keeps the file tracked.
+# git status
+
+******A commit in Git is a saved snapshot of your project at a specific point in time
+
+# git commit -m "Added test python test"
+# git commit -m "Your Message" --> used to tracked the staged file after being add by #git add
+# git status
+
+# git diff --> after modify any file show the difference
+
+# git rm --cached filename --> unstaged file to untracked
+
+
+# mkidr newdir
+# cd newdir
+# git clone git-url --> cloning repo from GitHub to local
+
+# git remote --> will show connection with remote repo
+# git remote add origin github-repo-url
+# git remote
+# git remote -v
+# git push origin main -->
+# git pull origin main --> pull changes from remote to local repo
+
+
+# git log
+# git log --oneline
+# git show commit-ID  ---> Show commit details
+# git checkout Commit-ID --> move to a particular Commit
+
+
+*****git ignore --> will ignore staging inside .gitignore file
+# vim .gitignore
+.env
+*.txt
+!main.txt
+test?.txt
+temp/
+
